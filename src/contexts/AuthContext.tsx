@@ -48,7 +48,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     const id = crypto.randomUUID();
     const u: User = { id, name: name.trim(), email: email.trim().toLowerCase(), role: "worker", phone, password };
     registerUser(u);
-    // Also create a Worker record
     addWorker({ id, name: name.trim(), role: role.trim(), phone, projectIds: [] });
     storeUser({ ...u, password: undefined });
     setUserState({ ...u, password: undefined });
