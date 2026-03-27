@@ -134,7 +134,6 @@ const ProjectDetails = () => {
         </div>
       </div>
 
-      {/* Tasks */}
       <div className="stat-card">
         <div className="flex items-center justify-between mb-3">
           <h3 className="font-display font-semibold flex items-center gap-2">
